@@ -22,15 +22,15 @@ This project is developed as a **frontend web development project** using HTML, 
 - Promote Sri Lanka's cultural heritage, natural beauty and tourism.
 - Provide useful information about tourist attractions and travel experiences.
 - Help travellers explore destinations based on their interests.
-- Offer a simple and interactive trip-planning interface.
-- Create a responsive and user-friendly website accessible across different devices.
+- Offer a simple and interactive trip planning interface.
+- Create a responsive and user friendly website accessible across different devices.
 
 ---
 
 ## ✨ Main Features
 
 ### 1. Home Page
-- Attractive landing page with a Sri Lankan travel-themed hero section.
+- Attractive landing page with a Sri Lankan travel themed hero section.
 - Destination search interface.
 - Popular tourist destinations.
 - Featured travel experiences.
@@ -221,7 +221,7 @@ code .
 
 ## 🌿 Git Workflow and Collaboration
 
-The team follows a branch-based development workflow to manage contributions and maintain the project.
+The team follows a branch based development workflow to manage contributions and maintain the project.
 
 ### Main Branch
 
