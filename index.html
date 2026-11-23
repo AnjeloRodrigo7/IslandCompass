@@ -86,7 +86,100 @@
 
         </section>
 
-        <!-- More homepage sections will be added here -->
+        <<!-- HOMEPAGE SEARCH SECTION -->
+
+        <section class="search-section">
+        
+            <div class="search-container">
+        
+                <div class="search-heading">
+        
+                    <span class="section-subtitle">START YOUR JOURNEY</span>
+        
+                    <h2>Where Would You Like to Go?</h2>
+        
+                    <p>
+                        Find your perfect destination and discover what Sri Lanka
+                        has to offer.
+                    </p>
+        
+                </div>
+        
+        
+                <!-- SEARCH FORM -->
+        
+                <form class="destination-search"
+                      action="destinations.html"
+                      method="GET">
+        
+                    <!-- DESTINATION INPUT -->
+        
+                    <div class="search-field">
+        
+                        <i class="fa-solid fa-location-dot"></i>
+        
+                        <div class="field-content">
+        
+                            <label for="destination">Destination</label>
+        
+                            <input
+                                type="text"
+                                id="destination"
+                                name="search"
+                                placeholder="Where do you want to go?"
+                            >
+        
+                        </div>
+        
+                    </div>
+        
+        
+                    <!-- CATEGORY SELECTOR -->
+        
+                    <div class="search-field">
+        
+                        <i class="fa-solid fa-compass"></i>
+        
+                        <div class="field-content">
+        
+                            <label for="category">Category</label>
+        
+                            <select id="category" name="category">
+        
+                                <option value="">All Categories</option>
+        
+                                <option value="beaches">Beaches</option>
+        
+                                <option value="mountains">Mountains</option>
+        
+                                <option value="heritage">Heritage</option>
+        
+                                <option value="wildlife">Wildlife</option>
+        
+                                <option value="nature">Nature</option>
+        
+                            </select>
+        
+                        </div>
+        
+                    </div>
+        
+        
+                    <!-- SEARCH BUTTON -->
+        
+                    <button type="submit" class="search-submit-btn">
+        
+                        <i class="fa-solid fa-magnifying-glass"></i>
+        
+                        Search Destinations
+        
+                    </button>
+        
+                </form>
+        
+            </div>
+        
+        </section>
 
     </main>
 
