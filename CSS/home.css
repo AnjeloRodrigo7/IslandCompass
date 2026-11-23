@@ -1,1 +1,254 @@
+/* =====================================
+   HOMEPAGE SEARCH SECTION
+===================================== */
 
+.search-section {
+
+    background-color: var(--background-color);
+
+    padding: 70px 6%;
+
+}
+
+.search-container {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+}
+
+
+/* SEARCH HEADING */
+
+.search-heading {
+
+    text-align: center;
+
+    margin-bottom: 35px;
+
+}
+
+.section-subtitle {
+
+    color: var(--secondary-color);
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    letter-spacing: 3px;
+
+}
+
+.search-heading h2 {
+
+    font-family: var(--heading-font);
+
+    font-size: 36px;
+
+    color: var(--primary-color);
+
+    margin: 12px 0;
+
+}
+
+.search-heading p {
+
+    color: var(--light-text);
+
+    font-size: 14px;
+
+}
+
+
+/* SEARCH FORM */
+
+.destination-search {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    background-color: var(--white);
+
+    padding: 25px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+
+}
+
+
+/* SEARCH FIELDS */
+
+.search-field {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    flex: 1;
+
+    padding: 10px;
+
+}
+
+.search-field > i {
+
+    color: var(--secondary-color);
+
+    font-size: 22px;
+
+}
+
+.field-content {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 5px;
+
+    width: 100%;
+
+}
+
+.field-content label {
+
+    color: var(--primary-color);
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+}
+
+.field-content input,
+.field-content select {
+
+    width: 100%;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    font-family: var(--body-font);
+
+    font-size: 13px;
+
+    color: var(--light-text);
+
+}
+
+
+/* SEARCH BUTTON */
+
+.search-submit-btn {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    background-color: var(--primary-color);
+
+    color: var(--white);
+
+    border: none;
+
+    border-radius: 5px;
+
+    padding: 16px 22px;
+
+    font-family: var(--body-font);
+
+    font-size: 13px;
+
+    font-weight: 500;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+.search-submit-btn:hover {
+
+    background-color: var(--secondary-color);
+
+    color: var(--primary-color);
+
+}
+
+
+/* =====================================
+   RESPONSIVE SEARCH SECTION
+===================================== */
+
+@media (max-width: 850px) {
+
+    .destination-search {
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+    }
+
+    .search-field {
+
+        border-bottom: 1px solid #eeeeee;
+
+        padding: 15px 5px;
+
+    }
+
+    .search-submit-btn {
+
+        width: 100%;
+
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .search-section {
+
+        padding: 50px 5%;
+
+    }
+
+    .search-heading h2 {
+
+        font-size: 27px;
+
+    }
+
+    .search-heading p {
+
+        font-size: 13px;
+
+    }
+
+    .destination-search {
+
+        padding: 18px;
+
+    }
+
+}
