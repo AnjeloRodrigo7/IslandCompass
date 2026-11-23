@@ -1,45 +1,111 @@
+/* =====================================
+   GLOBAL RESET
+===================================== */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+
+/* =====================================
+   WEBSITE COLOUR PALETTE
+===================================== */
+
 :root {
+
     --primary-color: #0B1933;
+
     --secondary-color: #D4AF65;
 
     --background-color: #F8F7F2;
+
     --text-color: #172238;
+
     --light-text: #777777;
+
     --white: #FFFFFF;
 
+
+    /* Typography */
+
     --heading-font: 'Playfair Display', serif;
+
     --body-font: 'Poppins', sans-serif;
+
+}
+
+
+/* =====================================
+   GENERAL BODY STYLING
+===================================== */
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
+
     font-family: var(--body-font);
+
     background-color: var(--background-color);
+
     color: var(--text-color);
+
     line-height: 1.6;
+
 }
 
+
+/* =====================================
+   GENERAL ELEMENTS
+===================================== */
+
 a {
+
     text-decoration: none;
+
     color: inherit;
+
+}
+
+button {
+
+    font-family: inherit;
+
 }
 
 img {
+
     max-width: 100%;
+
     display: block;
+
 }
+
+
+/* =====================================
+   COMMON CONTAINER
+===================================== */
 
 .container {
+
     width: 88%;
+
     max-width: 1400px;
+
     margin: 0 auto;
+
 }
 
+
+/* =====================================
+   COMMON SECTION SPACING
+===================================== */
+
 section {
+
     padding: 80px 0;
+
 }
