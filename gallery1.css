@@ -8,3 +8,46 @@
     text-align:center;
     color:#777777;
 }
+.image-gallery{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:25px;
+    padding:30px 8px;
+}
+ 
+.image-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding-bottom: 15px;
+}
+
+.image-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.image-card h3 {
+    color: #0B1933;
+}
+
+.image-card p {
+    color: #777777;
+}
+
+.image-card p:first-of-type {
+    color: #D4AF65;
+}
+
+.image-card small {
+    color: #777777;
+}
+
+@media (max-width: 600px) {
+    .image-gallery {
+        grid-template-columns: 1fr;
+    }
+}
