@@ -42,3 +42,20 @@
         grid-template-columns: 1fr;
     }
 }
+
+.experience-details{
+    display: none;
+    background-color: #F8F7F2;
+    padding:15px;
+    margin:15px;
+    border-radius: 10px;
+}
+
+.image-card button{
+    background:#0B1933;
+    color:white;
+    padding:10px 20px;
+    border:none;
+    border-radius: 6px;
+    cursor: pointer;
+}
