@@ -16,11 +16,12 @@
 }
  
 .image-card {
-    background: white;
+    background:#D4AF65;
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     padding-bottom: 15px;
+    padding: 50px 50px;
 }
 
 .image-card img {
