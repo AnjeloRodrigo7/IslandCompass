@@ -1,11 +1,13 @@
 h1{
   text-align:center;
   color:#D4AF65;
+  margin-bottom: 10px;
 }
 
 p{
   color:#777777;
   text-align:center;
+  margin:0;
 }
 
 
@@ -112,7 +114,12 @@ nav a.active{
 }
 
 .experience-heading img{
-
+  width:200px;
+  height:auto;
+  position:absolute;
+  left:5px;
 }
+
+.heading-text 
 
 
