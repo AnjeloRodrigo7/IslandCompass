@@ -31,6 +31,7 @@
 
 .image-card h3 {
     color: #0B1933;
+    padding-left: 4px;
 }
 
 
@@ -51,6 +52,8 @@
     border:none;
     border-radius: 6px;
     cursor: pointer;
+    padding-bottom: 10px;
+    
 }
 @media (max-width: 600px) {
     .image-gallery {
