@@ -34,17 +34,8 @@
     color: #0B1933;
 }
 
-.image-card p {
-    color: #777777;
-}
 
-.image-card p:first-of-type {
-    color: #D4AF65;
-}
 
-.image-card small {
-    color: #777777;
-}
 
 @media (max-width: 600px) {
     .image-gallery {
