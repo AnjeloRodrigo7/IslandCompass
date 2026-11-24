@@ -133,6 +133,13 @@ nav a.active{
   color:#D4AF65;
   letter-spacing:4px;
   font-size:13px;
-  
+
+}
+
+.left-intro h1{
+  font-size:48px;
+  line-height:1.2;
+  color:#F8F7F2;
+  margin:25px 0;
 }
 
