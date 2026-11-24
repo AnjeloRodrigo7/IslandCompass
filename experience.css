@@ -120,5 +120,19 @@ nav a.active{
   left:5px;
 }
 
-
+.left-intro{
+  position:absolute;
+  left:7%;
+  top:50%;
+  transform:translateY(-50%);
+  width:38%;
+  color:#F8F7F2;
+  padding:20px;
+}
+.intro-lable{
+  color:#D4AF65;
+  letter-spacing:4px;
+  font-size:13px;
+  
+}
 
