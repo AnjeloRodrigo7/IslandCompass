@@ -1,1 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>IslandCompass | Sri Lanka Travel Guide</title>
+
+    <meta name="description"
+        content="Discover Sri Lanka with IslandCompass. Explore destinations, culture, nature and unforgettable travel experiences.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/navbar.css">
+    <link rel="stylesheet" href="CSS/home.css">
+
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <div id="navbar-placeholder"></div>
+
+
+    <!-- Main Homepage Content -->
+    <main>
+
+        <!-- HERO SECTION -->
+        <section class="hero">
+
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+
+                <span class="hero-subtitle">
+                    WELCOME TO THE PEARL OF THE INDIAN OCEAN
+                </span>
+
+                <h1>
+                    Discover the Beauty of
+                    <span>Sri Lanka</span>
+                </h1>
+
+                <p>
+                    From golden beaches to misty mountains, ancient kingdoms
+                    to vibrant cultures. Your unforgettable island adventure
+                    begins here.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="destinations.html" class="hero-primary-btn">
+                        Explore Destinations
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                    <a href="about.html" class="hero-secondary-btn">
+                        Discover Our Story
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- Scroll Indicator -->
+            <div class="scroll-indicator">
+
+                <span>SCROLL TO EXPLORE</span>
+
+                <i class="fa-solid fa-chevron-down"></i>
+
+            </div>
+
+        </section>
+
+        <<!-- HOMEPAGE SEARCH SECTION -->
+
+        <section class="search-section">
+        
+            <div class="search-container">
+        
+                <div class="search-heading">
+        
+                    <span class="section-subtitle">START YOUR JOURNEY</span>
+        
+                    <h2>Where Would You Like to Go?</h2>
+        
+                    <p>
+                        Find your perfect destination and discover what Sri Lanka
+                        has to offer.
+                    </p>
+        
+                </div>
+        
+        
+                <!-- SEARCH FORM -->
+        
+                <form class="destination-search"
+                      action="destinations.html"
+                      method="GET">
+        
+                    <!-- DESTINATION INPUT -->
+        
+                    <div class="search-field">
+        
+                        <i class="fa-solid fa-location-dot"></i>
+        
+                        <div class="field-content">
+        
+                            <label for="destination">Destination</label>
+        
+                            <input
+                                type="text"
+                                id="destination"
+                                name="search"
+                                placeholder="Where do you want to go?"
+                            >
+        
+                        </div>
+        
+                    </div>
+        
+        
+                    <!-- CATEGORY SELECTOR -->
+        
+                    <div class="search-field">
+        
+                        <i class="fa-solid fa-compass"></i>
+        
+                        <div class="field-content">
+        
+                            <label for="category">Category</label>
+        
+                            <select id="category" name="category">
+        
+                                <option value="">All Categories</option>
+        
+                                <option value="beaches">Beaches</option>
+        
+                                <option value="mountains">Mountains</option>
+        
+                                <option value="heritage">Heritage</option>
+        
+                                <option value="wildlife">Wildlife</option>
+        
+                                <option value="nature">Nature</option>
+        
+                            </select>
+        
+                        </div>
+        
+                    </div>
+        
+        
+                    <!-- SEARCH BUTTON -->
+        
+                    <button type="submit" class="search-submit-btn">
+        
+                        <i class="fa-solid fa-magnifying-glass"></i>
+        
+                        Search Destinations
+        
+                    </button>
+        
+                </form>
+        
+            </div>
+        
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+
+
+    <!-- JavaScript -->
+    <script src="JS/main.js"></script>
+    <script src="JS/home.js"></script>
+
+</body>
+
+</html>
