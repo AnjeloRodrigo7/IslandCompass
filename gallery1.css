@@ -36,13 +36,6 @@
 
 
 
-
-@media (max-width: 600px) {
-    .image-gallery {
-        grid-template-columns: 1fr;
-    }
-}
-
 .experience-details{
     display: none;
     background-color: #F8F7F2;
@@ -58,4 +51,9 @@
     border:none;
     border-radius: 6px;
     cursor: pointer;
+}
+@media (max-width: 600px) {
+    .image-gallery {
+        grid-template-columns: 1fr;
+    }
 }
