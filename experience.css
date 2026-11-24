@@ -105,4 +105,10 @@ nav a.active{
   }
 }
 
+.company-logo img{
+  width: 150px;
+  height: auto;
+  object-fit: contain;
+}
+
 
