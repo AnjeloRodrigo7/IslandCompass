@@ -157,26 +157,3 @@ nav a.active{
   margin:30px 0;
 }
 
-.quick-links{
-  display:flex;
-  flex-direction: column;
-  gap:16px;
-  align-items: flex-start;
-  margin-top: 25px;
-}
-
-.quick-links a{
-  text-decoration: none;
-  color:#F8F7F2;
-  font-size: 16px;
-  transition: 0.2s;
-  border-left: 3px soild #D4AF65;
-  padding: 8px 16px;
-  display: block;
-}
-
-.quick-links a:hover{
-  color:#D4AF65;
-  padding-left: 5px;
-}
-
