@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lan="en">
+<head>
+  <title>Explore Sri Lanka | Destinations</title>
+  <style>
+
+    *{
+        margin: 0;
+       padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    }
+
+    body{
+         font-family: Arial, sans-serif;
+    background: #f5f8fa;
+    color: #263746;
+}
+nav {
+    background: #103b57;
+    color: white;
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;}
+
+    nav h2 {
+    font-size: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: bold;
+}
+nav a:hover {
+    color: #f4b544;
+}
+
+.hero {
+    min-height: 350px;
+    background:
+    linear-gradient(#0008, #0008),
+    url("https://images.unsplash.com/photo-1513415277900-a62401e19be4?auto=format&fit=crop&w=1600&q=80");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: white;
+    padding: 30px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.hero button {
+    background: #f4b544;
+    color: #103b57;
+    border: none;
+    padding: 13px 25px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.intro {
+    text-align: center;
+    padding: 45px 20px 15px;
+}
+
+.intro h2 {
+    color: #103b57;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.intro p {
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.7;
+    color: #647482;
+}
+
+
+.search {
+    text-align: center;
+    padding: 25px;
+}
+
+.search input {
+    width: 85%;
+    max-width: 550px;
+    padding: 15px;
+    border: 1px solid #ccd5dc;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+}
+
+.search input:focus {
+    border-color: #103b57;
+}
+
+
+.categories {
+    text-align: center;
+    padding: 15px 10px 30px;
+}
+
+.categories button {
+    padding: 11px 17px;
+    margin: 5px;
+    border: none;
+    border-radius: 20px;
+    background: #e3edf3;
+    color: #103b57;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.categories button:hover,
+.categories button.active {
+    background: #103b57;
+    color: white;
+}
+
+
+.container {
+    padding: 25px 7% 60px;
+}
+
+.container h2 {
+    text-align: center;
+    color: #103b57;
+    font-size: 30px;
+    margin-bottom: 35px;
+}
+
+.destinations {
+    display: grid;
+    grid-template-columns:
+    repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px #00000012;
+    transition: 0.3s;
+}
+
+
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content span {
+    color: #d18b20;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.card-content h3 {
+    color: #103b57;
+    font-size: 21px;
+    margin: 10px 0;
+}
+
+.card-content p {
+    color: #687782;
+    line-height: 1.6;
+    margin-bottom: 18px;
+}
+
+.card-content a {
+    display: inline-block;
+    background: #103b57;
+    color: white;
+    padding: 11px 18px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.card-content a:hover {
+    background: #e5a332;
+    color: #103b57;
+}
+
+.card.hide {
+    display: none;
+}
+
+
+#noResults {
+    display: none;
+    text-align: center;
+    padding: 30px;
+    color: #647482;
+}
+
+
+.details {
+    padding: 50px 8%;
+    background: #eaf1f5;
+}
+
+.details h2 {
+    color: #103b57;
+    margin-bottom: 10px;
+    scroll-margin-top: 20px;
+}
+
+.details p {
+    line-height: 1.7;
+    margin-bottom: 30px;
+    color: #536675;
+}
+
+
+footer {
+    background: #103b57;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+footer h3 {
+    margin-bottom: 12px;
+}
+
+footer p {
+    color: #d1e0e9;
+    line-height: 1.7;
+}
+
+
+
+    
+
+
+  </style>
+</head>
+
+
+
+<body>
+    <nav>
+        <h2>Explore Sri Lanka</h2>
+    <div>
+        <a href="#">Home</a>
+        <a href="#destinations">Destinations</a>
+        <a href="#about">About</a>
+    </div>
+
+    </nav>
+    <section class="hero">
+        <h1>Discover Sri Lanka</h1>
+       
+        <p>Explore beautiful beaches, ancient cities,
+        mountains and amazing wildlife.</p>
+        <button onclick="documnet.getElementById">Explore Destination</button>
+    
+    </section>
+
+    <section class="intro">
+
+    <h2>Explore Amazing Places</h2>
+
+    <p>
+        Sri Lanka is a beautiful island with many
+        wonderful tourist destinations. Discover
+        unforgettable places and experience the
+        beauty, culture and history of our country.
+    </p>
+
+</section>
+
+<div class="search">
+
+    <input type="text"
+           id="search"
+           placeholder="Search for a destination..."
+    >
+
+</div>
+
+<div class="categories">
+
+    <button class="active"
+    onclick="filterPlaces('All',this)">
+        All
+    </button>
+
+    <button onclick="filterPlaces('Beach',this)">
+        Beaches
+    </button>
+
+    <button onclick="filterPlaces('Historical',this)">
+        Historical Sites
+    </button>
+
+    <button onclick="filterPlaces('Mountain',this)">
+        Mountains & Hills
+    </button>
+
+    <button onclick="filterPlaces('Wildlife',this)">
+        Wildlife & Nature
+    </button>
+
+    <button onclick="filterPlaces('Religious',this)">
+        Religious Places
+    </button>
+
+    <button onclick="filterPlaces('Cultural',this)">
+        Cultural Attractions
+    </button>
+
+</div>
+<section class="container" id="destinations">
+
+    <h2>Popular Destinations</h2>
+
+    <div class="destinations">
+
+
+        <!-- SIGIRIYA -->
+        <div class="card" data-category="Historical">
+
+            <img src="https://images.unsplash.com/photo-1513415277900-a62401e19be4?auto=format&fit=crop&w=700&q=80"
+            alt="Sigiriya">
+
+            <div class="card-content">
+
+                <span>HISTORICAL SITE</span>
+
+                <h3>Sigiriya</h3>
+
+                <p>
+                    Discover the famous ancient rock fortress
+                    and its historical beauty.
+                </p>
+
+                <a href="#sigiriya">View Details</a>
+
+            </div>
+
+        </div>
+
+         <div class="card" data-category="Mountain">
+
+            <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=700&q=80"
+            alt="Ella">
+
+            <div class="card-content">
+
+                <span>MOUNTAINS & HILLS</span>
+
+                <h3>Ella</h3>
+
+                <p>
+                    Enjoy beautiful green mountains
+                    and breathtaking natural views.
+                </p>
+
+                <a href="#ella">View Details</a>
+
+            </div>
+
+        </div>
+        <div class="card" data-category="Historical">
+
+            <img src="https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=700&q=80"
+            alt="Galle Fort">
+
+            <div class="card-content">
+
+                <span>HISTORICAL SITE</span>
+
+                <h3>Galle Fort</h3>
+
+                <p>
+                    Explore historic architecture and
+                    beautiful coastal surroundings.
+                </p>
+
+                <a href="#galle">View Details</a>
+
+            </div>
+
+        </div>
+        <div class="card" data-category="Beach">
+
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=700&q=80"
+            alt="Mirissa">
+
+            <div class="card-content">
+
+                <span>BEACH</span>
+
+                <h3>Mirissa</h3>
+
+                <p>
+                    Relax and enjoy beautiful beaches
+                    and peaceful coastal views.
+                </p>
+
+                <a href="#mirissa">View Details</a>
+
+            </div>
+
+        </div>
+
+        <div class="card" data-category="Mountain">
+
+            <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=700&q=80"
+            alt="Nuwara Eliya">
+
+            <div class="card-content">
+
+                <span>MOUNTAINS & HILLS</span>
+
+                <h3>Nuwara Eliya</h3>
+
+                <p>
+                    Experience cool weather, green hills
+                    and beautiful tea plantations.
+                </p>
+
+                <a href="#nuwara">View Details</a>
+
+            </div>
+
+        </div>
+
+        <div class="card" data-category="Wildlife">
+
+            <img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=700&q=80"
+            alt="Yala National Park">
+
+            <div class="card-content">
+
+                <span>WILDLIFE & NATURE</span>
+
+                <h3>Yala National Park</h3>
+
+                <p>
+                    Discover amazing wildlife and
+                    natural environments.
+                </p>
+
+                <a href="#yala">View Details</a>
+
+            </div>
+
+        </div>
+
+        <div class="card" data-category="Religious">
+
+            <img src="https://images.unsplash.com/photo-1606293926075-69a00dbfde81?auto=format&fit=crop&w=700&q=80"
+            alt="Anuradhapura">
+
+            <div class="card-content">
+
+                <span>RELIGIOUS PLACES</span>
+
+                <h3>Anuradhapura</h3>
+
+                <p>
+                    Visit ancient temples and
+                    important religious locations.
+                </p>
+
+                <a href="#anuradhapura">View Details</a>
+
+            </div>
+
+        </div>
+
+        <div class="card" data-category="Cultural">
+
+            <img src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=700&q=80"
+            alt="Kandy">
+
+            <div class="card-content">
+
+                <span>CULTURAL ATTRACTION</span>
+
+                <h3>Kandy</h3>
+
+                <p>
+                    Discover Sri Lankan culture,
+                    traditions and historical attractions.
+                </p>
+
+                <a href="#kandy">View Details</a>
+
+            </div>
+
+        </div>
+
+
+    </div>
+     <p id="noResults">
+        No destinations found. Try another search.
+    </p>
+    </section>
+
+    <section class="details" id="about">
+
+    <h2>Destination Information</h2>
+
+    <p>
+        Explore more about the popular tourist
+        destinations of Sri Lanka.
+    </p>
+
+    <h2 id="sigiriya">Sigiriya</h2>
+
+    <p>
+        Sigiriya is an ancient rock fortress located
+        in the Matale District. It is famous for its
+        historical importance, gardens and paintings.
+    </p>
+
+
+    <h2 id="ella">Ella</h2>
+
+    <p>
+        Ella is a beautiful destination in the hill
+        country. It is popular for its mountains,
+        waterfalls and scenic railway views.
+    </p>
+
+
+    <h2 id="galle">Galle Fort</h2>
+
+    <p>
+        Galle Fort is a historical attraction located
+        in southern Sri Lanka. It is famous for its
+        colonial architecture and coastal beauty.
+    </p>
+
+
+    <h2 id="mirissa">Mirissa</h2>
+
+    <p>
+        Mirissa is a popular coastal destination in
+        southern Sri Lanka. It is known for its
+        beautiful beaches and ocean views.
+    </p>
+
+
+    <h2 id="nuwara">Nuwara Eliya</h2>
+
+    <p>
+        Nuwara Eliya is known for its cool climate,
+        tea plantations and beautiful green hills.
+    </p>
+
+
+    <h2 id="yala">Yala National Park</h2>
+
+    <p>
+        Yala National Park is famous for its wildlife,
+        natural landscapes and biodiversity.
+    </p>
+
+
+    <h2 id="anuradhapura">Anuradhapura</h2>
+
+    <p>
+        Anuradhapura is an ancient city famous for
+        its historical monuments and religious places.
+    </p>
+
+
+    <h2 id="kandy">Kandy</h2>
+
+    <p>
+        Kandy is a cultural city famous for its
+        traditions and the Temple of the Sacred Tooth Relic.
+    </p>
+
+</section>
+
+<footer>
+
+    <h3>Explore Sri Lanka</h3>
+
+    <p>
+        Discover the beauty of our island.
+    </p>
+
+    <p>
+        © 2026 Explore Sri Lanka.
+        All Rights Reserved.
+    </p>
+
+</footer>
+
+
+
+</body>
+</html>
